@@ -3,7 +3,7 @@
 // all possible options will be stored
 $config = array();
 
-$config['website-name'] = "Online Web Proxy";
+$config['website-name'] = "Esconde mi pais";
 $config['website-url'] = "http://localhost/proxy";
 $config['website-description'] = "PHP - Online Web Proxy";
 
