@@ -22,8 +22,7 @@ Features
 Preview
 -------
 
-![image](https://user-images.githubusercontent.com/25538565/156220995-bf24f113-f748-4fcc-86df-da4728787383.png)
-
 ![image](https://i.ibb.co/T0zL8yN/preview.png)
 
+![image](https://user-images.githubusercontent.com/25538565/156221396-72fde280-880a-4a44-8e89-f339a20c67e5.png)
 
