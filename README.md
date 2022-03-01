@@ -23,7 +23,7 @@ Features
 Preview
 -------
 
-![image](https://i.ibb.co/T0zL8yN/preview.png)
+![image](https://user-images.githubusercontent.com/25538565/156222954-63f38888-ed00-4d8d-87e7-a9a77dfac97c.png)
 
 ![image](https://user-images.githubusercontent.com/25538565/156221396-72fde280-880a-4a44-8e89-f339a20c67e5.png)
 
