@@ -4,6 +4,7 @@ PHP Online Web Proxy
 ![](https://cdn.nicheoffice.web.tr/image/1172169776_.jpg)
 
 Online web proxy hide you from the Internet. You don’t need install any plugin or software. You can surf the Internet with anonymity.
+TO AVOID THE BLOCKING OF A WEB, IT IS NECESSARY TO DEPLOY IT ON A SERVER IN A COUNTRY DIFFERENT FROM THE COUNTRY IN WHICH YOU LIVE.
 
 Features
 --------
@@ -21,4 +22,8 @@ Features
 Preview
 -------
 
-![](https://cdn.nicheoffice.web.tr/image/1583667250_.png)
+![image](https://user-images.githubusercontent.com/25538565/156220995-bf24f113-f748-4fcc-86df-da4728787383.png)
+
+![image](https://i.ibb.co/T0zL8yN/preview.png)
+
+
