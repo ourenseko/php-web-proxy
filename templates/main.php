@@ -23,7 +23,8 @@ require(__DIR__ . "/../config.php");
             <?php } ?>
             <div class="jumbotron">
                 <h1 class="display-3"><?php echo $config['website-name']; ?></h1>
-                <p class="lead"><?php echo $lang["slogan"]; ?></p>
+				<p class="lead"><?php echo $lang["slogan"]; ?></p>
+				<!--
                 <div class="btn-group" role="group">
                     <a id="twitter" class="btn btn-info" href="#">Twitter</a>
                     <a id="youtube" class="btn btn-danger" href="#">YouTube</a>
@@ -35,21 +36,32 @@ require(__DIR__ . "/../config.php");
                     <a id="vikipedi" class="btn btn-secondary" href="#"><?php echo $lang["wikipedia"]; ?></a>
                     <a id="google" class="btn btn-success" href="#">Google</a>
                 </div>
+				-->
                 <p class="lead">
                 <form class="form-group" action="index.php" method="post">
                     <input id="url" name="url" type="url" class="form-control" autocomplete="on" placeholder="http://"
                            autofocus required/>
                     <br>
-                    <input class="btn btn-primary btn-lg" type="submit" value="<?php echo $lang["go"]; ?>"/>
+					<a id="paste" class="btn btn-primary" href="#"><?php echo $lang["paste"]; ?></a>
+                    <input class="btn btn-primary btn-lg" style="cursor:pointer;" type="submit" value="<?php echo $lang["go"]; ?>"/>
+					
                 </form>
             </div>
+			
             <div class="text-center">
                 <p style="font-size:11px">
-                    <small><?php echo $lang["agree"]; ?> <a
+					Este proxy web hace uso de cookies y recopila datos de uso para su analisis, usar bajo su propia responsabilidad.<br>
+                    <small>
+						Si usted no acepta dicho tratamiento, por favor abandone el sitio web
+					<!--<?php echo $lang["agree"]; ?> <a
                                 href="<?php echo $config['website-url']; ?>/?tos"><?php echo $lang["tos_2"]; ?></a>
+								-->
                     </small>
+					
                 </p>
             </div>
+			
+			
         </div>
     </div>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -69,6 +81,17 @@ require(__DIR__ . "/../config.php");
         $('#vikipedi').click(function () {
             $('#url').val('https://wikipedia.org');
         });
+		$('#paste').click(function () {
+			navigator.clipboard.readText()
+			.then(texto => {
+				console.log("Clipboard: ", texto);		
+				$('#url').val(texto);
+			})
+			.catch(error => {
+				// Por si el usuario no da permiso u ocurre un error
+				console.log("Hubo un error: ", error);
+			});
+		});
     </script>
 </div>
 </body>
